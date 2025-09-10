@@ -1,0 +1,175 @@
+
+
+/* Set Background to a blue-green gradient */
+body {
+   background-image: linear-gradient(45deg, #0078ce, #00b06d);
+   margin: 0px;
+}
+
+/* Elements are in a container div for easier styling */
+#container {
+   /* Column of boxes*/
+   display: flex;
+   flex-direction: column;
+
+   /* Add padding, center content, and set width-height to readable size*/
+   padding: 0px 20px 0px 20px;
+   justify-content: center;
+   align-items: stretch;
+   max-width: 1000px;
+   min-width: 400px;
+   margin: auto;
+   font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+   /*Use 'Inter' as font everywhere*/
+}
+
+/* Remove default margin of figure/figcaption and align them using flex */
+figure {
+   margin: 0px 18px 0px 18px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+figcaption {
+   max-width: 400px;
+}
+
+/* Remove default margins of footer and p */
+footer p {
+   margin: 0px
+}
+
+footer.block {
+   margin-top: 0px
+}
+
+/* Set default block styles */
+.block {
+   border-radius: 16px;
+   background-color: #ffffff;
+   margin: 0px;
+   padding: 27px;
+   box-shadow: 0px 0px 10px rgba(0, 46, 29, 0.25);
+   margin: 20px 0px 20px 0px;
+}
+
+/* Style header block, align page title to the left, and nav links to the right */
+header.block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 27px;
+   margin: 20px 0px 0px 0px;
+}
+
+/* set h1-h3 default styles */
+h1 {
+   margin: 0px;
+   padding: 0px;
+   font-size: 40px;
+   color: #008653;
+}
+
+h2 {
+   margin: 0px;
+   padding: 0px;
+}
+
+h3 {
+   margin-top: 0px;
+}
+
+/*Style navigation links in top right of header block */
+header nav ul {
+   display: flex;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   gap: 18px;
+   font-size: 16px;
+   color: white;
+}
+
+header nav ul li {
+   border-radius: 8px;
+   background-color: rgba(0, 46, 29);
+   padding: 4px 10px 4px 10px;
+   transition: background-color 0.3s ease;
+}
+
+/* Add animated transition to nav links */
+header nav ul li:hover {
+   background-color: #009059
+}
+
+header nav a {
+   color: white;
+   text-decoration: none;
+}
+
+/* remove defautl margins of main */
+main {
+   margin: 0px;
+   padding: 0px;
+}
+
+/* Create separate cards for projects in the project section */
+article.project {
+   padding: 18px;
+   background-color: rgba(0, 176, 109, 0.2);
+   border: 3px solid #009059;
+   border-radius: 12px;
+   margin-top: 27px;
+}
+
+/* Create a grid to separate the main sections and the aside into 2 columns */
+#central-grid {
+   display: grid;
+   grid-template-columns: 1fr 250px;
+   gap: 20px;
+}
+
+/* Style form */
+form {
+   margin: 20px 0px 0px 0px;
+}
+
+label {
+   /* put labels on different lines */
+   display: block;
+   margin: 0px 0px 8px 0px;
+}
+
+/* Size, position, and styles of input areas */
+input[type=text],
+input[type=email],
+textarea {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   transition: border 0.25s ease;
+   font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+   font-size: 16px;
+}
+
+/* Input areas after being clicked or focused */
+input:focus,
+textarea:focus {
+   outline: none;
+   border: 3px solid #009059;
+}
+
+/* Make the submit button look good */
+button {
+   background-color: #009059;
+   color: white;
+   padding: 16px 24px 16px 24px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+   font-size: 16px;
+}
